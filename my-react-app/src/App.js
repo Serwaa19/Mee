@@ -4,7 +4,8 @@ import LandingPage from './components/pages/LandingPage';
 import Login from './components/pages/Login';
 import Dashboard from './components/pages/Dashboard';
 import Contact from './components/pages/Contact';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {  
   return (
@@ -12,25 +13,16 @@ function App() {
 
       <div>
       <Navbar />
-
-        <Route path="/LandingPage">
-        <LandingPage/>
-        </Route>
-
-        <Route path="/Login">
-        <Login/>
-        </Route>
-
-        <Route path="/Dashboard">
-        <Dashboard/>
-        </Route>
-
-        <Route path="/Contact">
-        <Contact/>
-        </Route>
+      <Routes>
+  <Route path="/LandingPage" element={<LandingPage />} />
+  <Route path="/Login" element={<Login/>} />
+  <Route path="/Dashboard" element={<Dashboard/>} />
+  <Route path="/Contact" element={<Contact/>} />
+</Routes>
 
     </div>
     </Router>
+   
   );
 }
 
