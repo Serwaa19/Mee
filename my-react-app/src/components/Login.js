@@ -25,7 +25,7 @@ function Login(){
        <div className='d-grid'>
         <button className='btn btn-primary'>Sign In</button>
         </div>
-       
+        <div class=".bg-dark.bg-gradient"></div>
         </form>
         </div>
         </div>

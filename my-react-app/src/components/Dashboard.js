@@ -5,9 +5,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Dashboard = () => {
   const grades = [
-    { course: 'CS101', grade: 'A' },
-    { course: 'CS201', grade: 'B' },
-    { course: 'CS301', grade: 'C' },
+    { course: ' DCIT 209-E-Business Architecture', grade: 'A' },
+    { course: 'DCIT 205-Multimedia and Web Design', grade: 'B+' },
+    { course: 'DCIT 201-Programming I', grade: 'A' },
   ];
 
   const missingGrades = grades.filter((grade) => !grade.grade);

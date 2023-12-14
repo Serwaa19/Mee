@@ -32,7 +32,7 @@ function Navbar(){
             <Link to="/Contact" className="nav-link active">Contact</Link>
           </li>
           <li className="nav-item">
-            <Link to="/faqs" className="nav-link active">Help and Support</Link>
+            <Link to="/FAQSection" className="nav-link active">Help and Support</Link>
           </li>
         </ul>
       </div>
